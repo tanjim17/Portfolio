@@ -1,0 +1,270 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        {% load staticfiles %}
+
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <meta name="description" content="">
+          <meta name="author" content="">
+
+          <title>Tanjim A. Khan</title>
+
+          <!-- Bootstrap core CSS -->
+          <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+
+          <!-- Custom fonts for this template -->
+          <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+          <link href="{% static "vendor/fontawesome-free/css/all.min.css" %}" rel="stylesheet">
+
+          <!-- Custom styles for this template -->
+          <link href="{% static "css/resume.min.css" %}" rel="stylesheet">
+
+        </head>
+
+        <body id="page-top">
+
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+              <span class="d-block d-lg-none">Clarence Taylor</span>
+              <span class="d-none d-lg-block">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static "img/pro.jpg" %}" alt="">
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#experience">Volunteering</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="container-fluid p-0">
+
+            <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+              <div class="w-100">
+                <h1 class="mb-0">Tanjim Ahmed
+                  <span class="text-primary">Khan</span>
+                </h1>
+                <div class="subheading mb-5">Wannabe CS Geek
+                </div>
+                <p class="lead mb-5">I am currently a sophomore studying Computer Science and Engineering at BUET. Besides, I volunteer as a Publication Executive at BUET Brainiacs, a quiz club of my university. </p>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/tanjim-ahmed-khan/">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://www.github.com/tanjim17">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.twitter.com/t_ak49">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://www.facebook.com/tanjimkhan.49">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                    <a href="mailto:tanjim.ak49@gmail.com">
+                    <i class="fas fa-envelope-square"></i>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <hr class="m-0">
+
+              <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+              <div class="w-100">
+                <h2 class="mb-5">Education</h2>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="resume-content">
+                    <h3 class="mb-0">Bangladesh University of Engineering and Technology</h3>
+                    <div class="subheading mb-3">Bachelor of Science(Engineering)</div>
+                    <div>Computer Science and Engineering</div>
+                  </div>
+                    <div class="resume-date text-md">
+                        <img src="{% static "img/buet.png" %}" width="50" height="50">
+                    </div>
+                  <div class="resume-date text-md-right">
+                    <span class="text-primary">March 2018 - Present</span>
+                  </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="resume-content">
+                    <h3 class="mb-0">Notre Dame College, Dhaka</h3>
+                    <div class="subheading mb-3">Higher Secondary Certificate</div>
+                  </div>
+                    <div class="resume-date text-md">
+                        <img src="{% static "img/notredame.jpg" %}" width="60" height="60">
+                    </div>
+                  <div class="resume-date text-md-right">
+                    <span class="text-primary">July 2015 - August 2017</span>
+                  </div>
+                </div>
+
+                  <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+                  <div class="resume-content">
+                    <h3 class="mb-0">St. Joseph Higher Secondary School</h3>
+                    <div class="subheading mb-3">Secondary School Certificate</div>
+                  </div>
+                      <div class="resume-date text-md">
+                        <img src="{% static "img/stj.png" %}" width="50" height="50">
+                    </div>
+                  <div class="resume-date text-md-right">
+                    <span class="text-primary">January 2007 - May 2015</span>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <hr class="m-0">
+
+              <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+              <div class="w-100">
+              <h2 class="mb-5">Projects</h2>
+            <div class="album py-5 bg-light">
+                <div class="container">
+                  <div class="row">
+                      {% for project in projects.all reversed %}
+                    <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <a href={{project.url}}><img width="100%" height="225" src="{{ project.image.url }}"></a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <b>{{ project.title }}</b>
+                        </div>
+                          <div class="card-body">
+                              <p class="card-text">{{ project.summary }}</p>
+                          </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+              </div>
+              </section>
+
+              <hr class="m-0">
+
+            <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+              <div class="w-100">
+                <h2 class="mb-5">Skills</h2>
+
+                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+                <ul class="list-inline dev-icons">
+                  <li class="list-inline-item">
+                    <i class="fab fa-java"></i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i class="fab fa-python"></i>
+                  </li>
+                    <li class="list-inline-item">
+                    <i class="fab fa-html5"></i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i class="fab fa-css3-alt"></i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i class="fab fa-js-square"></i>
+                  </li>
+                    <li class="list-inline-item">
+                    <i class="fas fa-file-powerpoint"></i>
+                  </li>
+                    <li class="list-inline-item">
+                    <i class="fab fa-adobe"></i>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <hr class="m-0">
+
+            <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+              <div class="w-100">
+                <h2 class="mb-5">Interests</h2>
+                <p>Apart from study, I enjoy most of time watching movies and tv series, preferably comedy. I like reading thriller novels.</p>
+                <p class="mb-0">I am an avid follower of cricket, though not a good sportsman myself :)</p>
+              </div>
+            </section>
+
+            <hr class="m-0">
+
+            <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+              <div class="w-100">
+                <h2 class="mb-5">Volunteering</h2>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="resume-content">
+                    <h3 class="mb-0">Executive</h3>
+                    <div class="subheading mb-3">BUET Brainiacs</div>
+                    <p>A club for quizzers and quiz enthusiasts in my university. We organize general knowledge and different fandom based quiz contests throughout the year.</p>
+                  </div>
+                    <div class="resume-date text-md">
+                        <img src="{% static "img/brainiacs.png" %}" width="60" height="60">
+                    </div>
+                  <div class="resume-date text-md-right">
+                    <span class="text-primary">November 2018 - Present</span>
+                  </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+                  <div class="resume-content">
+                    <h3 class="mb-0">Photographer</h3>
+                    <div class="subheading mb-3">Scintilla Science Club</div>
+                    <p>The oldest high school science club in Dhaka.</p>
+                  </div>
+                    <div class="resume-date text-md">
+                        <img src="{% static "img/scintilla.jpg" %}" width="60" height="60">
+                    </div>
+                  <div class="resume-date text-md-right">
+                    <span class="text-primary">June 2013 - July 2013</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </section>
+
+            <hr class="m-0">
+          </div>
+
+          <footer class="text-muted">
+            <div class="container text-center">
+            <p>© Tanjim Ahmed Khan {% now "Y" %}</p>
+          </div>
+        </footer>
+
+          <!-- Bootstrap core JavaScript -->
+          <script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
+          <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+
+          <!-- Plugin JavaScript -->
+          <script src="{% static "vendor/jquery-easing/jquery.easing.min.js" %}"></script>
+
+          <!-- Custom scripts for this template -->
+          <script src="{% static "js/resume.min.js" %}"></script>
+
+        </body>
+
+        </html>
