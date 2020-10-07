@@ -50,6 +50,9 @@
                   <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
                 </li>
                   <li class="nav-item">
@@ -66,7 +69,7 @@
                 <h1 class="mb-0">Tanjim Ahmed
                   <span class="text-primary">Khan</span>
                 </h1>
-                <div class="subheading mb-5">Wannabe CS Geek :)
+                <div class="subheading mb-5">Undergrad  CS  student
                 </div>
                 <p class="lead mb-5">I am currently a sophomore studying Computer Science and Engineering at BUET. Besides, I volunteer as a Publication Executive at BUET Brainiacs, a quiz club of my university. </p>
                 <div class="social-icons">
@@ -97,13 +100,11 @@
 
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div class="resume-content">
-                    <h3 class="mb-0">Bangladesh University of Engineering and Technology</h3>
-                    <div class="subheading mb-3">Bachelor of Science</div>
-                    <div>Computer Science and Engineering</div>
+                    <h3 class="mb-0">Bangladesh University of Engineering and Technology
+                        <img src="{% static "img/buet.png" %}" width="50" height="50" class="ml-4"></h3>
+                    <div class="subheading">Bachelor of Science</div>
+                    <div class="mb-3">Computer Science and Engineering</div>
                   </div>
-                    <div class="resume-date text-md">
-                        <img src="{% static "img/buet.png" %}" width="50" height="50">
-                    </div>
                   <div class="resume-date text-md-right">
                     <span class="text-primary">March 2018 - Present</span>
                   </div>
@@ -111,12 +112,10 @@
 
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div class="resume-content">
-                    <h3 class="mb-0">Notre Dame College, Dhaka</h3>
+                    <h3 class="mb-0">Notre Dame College, Dhaka
+                        <img src="{% static "img/notredame.jpg" %}" width="60" height="60" class="ml-4"></h3>
                     <div class="subheading mb-3">Higher Secondary Certificate</div>
                   </div>
-                    <div class="resume-date text-md">
-                        <img src="{% static "img/notredame.jpg" %}" width="60" height="60">
-                    </div>
                   <div class="resume-date text-md-right">
                     <span class="text-primary">July 2015 - August 2017</span>
                   </div>
@@ -124,12 +123,10 @@
 
                   <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
                   <div class="resume-content">
-                    <h3 class="mb-0">St. Joseph Higher Secondary School</h3>
+                    <h3 class="mb-0">St. Joseph Higher Secondary School
+                        <img src="{% static "img/stj.png" %}" width="50" height="50" class="ml-4"></h3>
                     <div class="subheading mb-3">Secondary School Certificate</div>
                   </div>
-                      <div class="resume-date text-md">
-                        <img src="{% static "img/stj.png" %}" width="50" height="50">
-                    </div>
                   <div class="resume-date text-md-right">
                     <span class="text-primary">January 2007 - May 2015</span>
                   </div>
@@ -150,10 +147,8 @@
                     <div class="col-md-4">
                       <div class="card mb-4 shadow-sm">
                         <a href={{project.url}}><img width="100%" height="225" src="{{ project.image.url }}"></a>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <b>{{ project.title }}</b>
-                        </div>
                           <div class="card-body">
+                              <b class="card-title">{{ project.title }}</b>
                               <p class="card-text">{{ project.summary }}</p>
                           </div>
                       </div>
@@ -171,8 +166,8 @@
               <div class="w-100">
                 <h2 class="mb-5">Skills</h2>
 
-                <div class="subheading mb-3">Programming Languages</div>
-                <ul class="list-inline dev-icons">
+                <div class="subheading mb-3" style="font-size:30px">Languages</div>
+                <ul style="font-size:20px">
                   <li class="list-inline-item">
                     <i>C</i>
                   </li>
@@ -186,6 +181,9 @@
                     <i>Python</i>
                   </li>
                   <li class="list-inline-item">
+                    <i>SQL</i>
+                 </li>
+                  <li class="list-inline-item">
                     <i>HTML</i>
                   </li>
                     <li class="list-inline-item">
@@ -193,18 +191,41 @@
                   </li>
                 </ul>
 
-                <div class="subheading mb-3">Frameworks</div>
-                <ul class="list-inline dev-icons">
-                  <li class="list-inline-item">
-                    <i>JavaFX</i>
+                <div class="subheading mb-3" style="font-size:30px">Platforms and Frameworks</div>
+                <ul style="font-size:20px">
+                    <li class="list-inline-item">
+                    <i>Android Studio</i>
                   </li>
                     <li class="list-inline-item">
                     <i>Django</i>
                   </li>
+                  <li class="list-inline-item">
+                    <i>Bootstrap</i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i>JavaFX</i>
+                  </li>
                 </ul>
 
-                <div class="subheading mb-3">Tools</div>
-                <ul class="list-inline dev-icons">
+                <div class="subheading mb-3" style="font-size:30px">DBMS</div>
+                <ul style="font-size:20px">
+                  <li class="list-inline-item">
+                    <i>Oracle</i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i>SQLite</i>
+                  </li>
+                </ul>
+
+                <div class="subheading mb-3" style="font-size:30px">Version Control</div>
+                <ul style="font-size:20px">
+                  <li class="list-inline-item">
+                    <i>Git</i>
+                  </li>
+                </ul>
+
+                <div class="subheading mb-3" style="font-size:30px">Other Tools</div>
+                <ul style="font-size:20px">
                   <li class="list-inline-item">
                     <i>MS Powerpoint</i>
                   </li>
@@ -214,12 +235,30 @@
                     <li class="list-inline-item">
                     <i>Adobe Photoshop</i>
                   </li>
-                  <li class="list-inline-item">
-                    <i>Adobe Illustrator</i>
-                  </li>
                 </ul>
 
               </div>
+            </section>
+
+            <hr class="m-0">
+
+            <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+              <div class="w-100">
+                <h2 class="mb-5">Awards</h2>
+
+                <div class="subheading mb-3" style="font-size:30px">2nd Runner Up - HackNSU Season 2, 2020</div>
+                <ul style="font-size:20px">
+                  <li class="list-inline-item">
+                    <i>Inter-university hackathon organized by ACM Student Chapter, North South University. Developed a Django website prototype for garment owners and vendors that automates procurement process and inventory management.</i>
+                  </li>
+                </ul>
+
+                <div class="subheading mb-3" style="font-size:30px">Dean's List - 2019</div>
+                <ul style="font-size:20px">
+                    <li class="list-inline-item">
+                    <i>Received for academic excellence.</i>
+                  </li>
+                </ul>
             </section>
 
             <hr class="m-0">
@@ -240,28 +279,24 @@
 
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div class="resume-content">
-                    <h3 class="mb-0">Executive</h3>
-                    <div class="subheading mb-3">BUET Brainiacs</div>
-                    <p>A club for quizzers and quiz enthusiasts in my university. We organize general knowledge and fandom based quiz contests throughout the year.</p>
+                    <h3 class="mb-0">BUET Brainiacs
+                    <img src="{% static "img/brainiacs.png" %}" width="60" height="60" class="ml-4"></h3>
+                    <div class="subheading mb-3">Publication Executive</div>
+                    <p>Quiz club of BUET.</p>
                   </div>
-                    <div class="resume-date text-md">
-                        <img src="{% static "img/brainiacs.png" %}" width="60" height="60">
-                    </div>
-                  <div class="resume-date text-md-right">
+                  <div class="resume-date text-md">
                     <span class="text-primary">November 2018 - Present</span>
                   </div>
                 </div>
 
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
                   <div class="resume-content">
-                    <h3 class="mb-0">Photographer</h3>
-                    <div class="subheading mb-3">Scintilla Science Club</div>
-                    <p>The oldest high school science club in Dhaka.</p>
+                    <h3 class="mb-0">Scintilla Science Club
+                        <img src="{% static "img/scintilla.jpg" %}" width="40" height="40" class="ml-4"></h3>
+                    <div class="subheading">Photographer</div>
+                    <p>Science club of St. Joseph Higher Sec. School</p>
                   </div>
-                    <div class="resume-date text-md">
-                        <img src="{% static "img/scintilla.jpg" %}" width="50" height="50">
-                    </div>
-                  <div class="resume-date text-md-right">
+                  <div class="resume-date text-md">
                     <span class="text-primary">June 2013 - July 2013</span>
                   </div>
                 </div>
