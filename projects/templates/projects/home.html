@@ -20,8 +20,14 @@
 
           <!-- Custom styles for this template -->
           <link href="{% static "css/resume.min.css" %}" rel="stylesheet">
-
+          <link href="{% static "css/extra.css" %}" rel="stylesheet">
         </head>
+
+        <style>
+            a:hover, a:focus, a:active {
+                color: #868e96;
+            }
+        </style>
 
         <body id="page-top">
 
@@ -52,9 +58,6 @@
                 <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-                </li>
                   <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#experience">Volunteering</a>
                 </li>
@@ -69,25 +72,32 @@
                 <h1 class="mb-0">Tanjim Ahmed
                   <span class="text-primary">Khan</span>
                 </h1>
-                <div class="subheading mb-5">Undergrad  CS  student
+                <div class="subheading mb-5">CS    Undergrad
                 </div>
-                <p class="lead mb-5">I am currently a sophomore studying Computer Science and Engineering at BUET. Besides, I volunteer as a Publication Executive at BUET Brainiacs, a quiz club of my university. </p>
+                <p class="lead mb-5">I am currently a final year student at Dept. of Computer Science and Engineering, BUET. Besides, I volunteer as General Secretary at BUET Brainiacs, a quiz club of my university. </p>
                 <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/tanjim-ahmed-khan/">
+                  <a href="https://www.linkedin.com/in/tanjim17/">
                     <i class="fab fa-linkedin-in"></i>
                   </a>
                   <a href="https://www.github.com/tanjim17">
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="https://www.twitter.com/t_ak49">
+                  <a href="https://stackoverflow.com/users/10325630/tanjim-ahmed-khan">
+                    <i class="fab fa-stack-overflow"></i>
+                  </a>
+                  <a href="https://www.twitter.com/tanjim_17">
                     <i class="fab fa-twitter"></i>
                   </a>
-                  <a href="https://www.facebook.com/tanjimkhan.49">
+                  <a href="https://www.facebook.com/tanjimkhan17">
                     <i class="fab fa-facebook-f"></i>
                   </a>
                     <a href="mailto:tanjim.ak49@gmail.com">
                     <i class="fas fa-envelope-square"></i>
                   </a>
+                </div>
+                <div class="mt-5">
+                  <button type="button" class="btn mybtn" onclick="location.href='{% url 'download' %}'">
+                    <i class="fa fa-download mr-2"></i>Resume</button>
                 </div>
               </div>
             </section>
@@ -145,13 +155,15 @@
                   <div class="row">
                       {% for project in projects.all reversed %}
                     <div class="col-md-4">
+                    <a href={{project.url}}>
                       <div class="card mb-4 shadow-sm">
-                        <a href={{project.url}}><img width="100%" height="225" src="{{ project.image.url }}"></a>
+                        <img width="100%" height="225" src="{{ project.image.url }}">
                           <div class="card-body">
-                              <b class="card-title">{{ project.title }}</b>
-                              <p class="card-text">{{ project.summary }}</p>
+                              <b class="card-title" style="color: #868e96;">{{ project.title }}</b>
+                              <p class="card-text" style="color: #868e96;">{{ project.summary }}</p>
                           </div>
                       </div>
+                    </a>
                     </div>
                     {% endfor %}
                   </div>
@@ -169,51 +181,76 @@
                 <div class="subheading mb-3" style="font-size:30px">Languages</div>
                 <ul style="font-size:20px">
                   <li class="list-inline-item">
-                    <i>C</i>
+                    <i>C,</i>
                   </li>
                   <li class="list-inline-item">
-                    <i>C++</i>
+                    <i>C++,</i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i>Python,</i>
                   </li>
                     <li class="list-inline-item">
-                    <i>Java</i>
+                    <i>Java,</i>
                   </li>
                   <li class="list-inline-item">
-                    <i>Python</i>
+                    <i>JavaScript,</i>
                   </li>
                   <li class="list-inline-item">
-                    <i>SQL</i>
+                    <i>HTML,</i>
+                  </li>
+                    <li class="list-inline-item">
+                    <i>CSS,</i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i>SQL,</i>
                  </li>
                   <li class="list-inline-item">
-                    <i>HTML</i>
+                    <i>Shell,</i>
                   </li>
-                    <li class="list-inline-item">
-                    <i>CSS</i>
+                  <li class="list-inline-item">
+                    <i>8086 Assembly</i>
                   </li>
                 </ul>
 
                 <div class="subheading mb-3" style="font-size:30px">Platforms and Frameworks</div>
                 <ul style="font-size:20px">
                     <li class="list-inline-item">
-                    <i>Android Studio</i>
-                  </li>
-                    <li class="list-inline-item">
-                    <i>Django</i>
+                    <i>Django REST Framework,</i>
                   </li>
                   <li class="list-inline-item">
-                    <i>Bootstrap</i>
+                    <i>React,</i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i>Android Studio,</i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i>Bootstrap,</i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i>Chrome Extension,</i>
                   </li>
                   <li class="list-inline-item">
                     <i>JavaFX</i>
                   </li>
                 </ul>
 
+                <div class="subheading mb-3" style="font-size:30px">Cloud Platforms</div>
+                <ul style="font-size:20px">
+                    <li class="list-inline-item">
+                    <i>Heroku,</i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i>PythonAnywhere</i>
+                  </li>
+                </ul>
+
                 <div class="subheading mb-3" style="font-size:30px">DBMS</div>
                 <ul style="font-size:20px">
                   <li class="list-inline-item">
-                    <i>Oracle</i>
+                    <i>Oracle,</i>
                   </li>
                   <li class="list-inline-item">
-                    <i>SQLite</i>
+                    <i>PostgreSQL</i>
                   </li>
                 </ul>
 
@@ -224,13 +261,32 @@
                   </li>
                 </ul>
 
-                <div class="subheading mb-3" style="font-size:30px">Other Tools</div>
+                <div class="subheading mb-3" style="font-size:30px">Hardware</div>
                 <ul style="font-size:20px">
                   <li class="list-inline-item">
-                    <i>MS Powerpoint</i>
+                    <i>ATmega32,</i>
                   </li>
                   <li class="list-inline-item">
-                    <i>MS Word</i>
+                    <i>Arduino</i>
+                  </li>
+                </ul>
+
+                <div class="subheading mb-3" style="font-size:30px">Other Tools</div>
+                <ul style="font-size:20px">
+                    <li class="list-inline-item">
+                    <i>LaTeX,</i></i>
+                  </li>
+                    <li class="list-inline-item">
+                    <i>Proteus,</i></i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i>Logisim,</i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i>Packet Tracer,</i>
+                  </li>
+                  <li class="list-inline-item">
+                    <i>MS Powerpoint,</i>
                   </li>
                     <li class="list-inline-item">
                     <i>Adobe Photoshop</i>
@@ -249,7 +305,7 @@
                 <div class="subheading mb-3" style="font-size:30px">2nd Runner Up - HackNSU Season 2, 2020</div>
                 <ul style="font-size:20px">
                   <li class="list-inline-item">
-                    <i>Inter-university hackathon organized by ACM Student Chapter, North South University. Developed a Django website prototype for garment owners and vendors that automates procurement process and inventory management.</i>
+                    <i>Inter-university hackathon organized by ACM Student Chapter, North South University. Developed a Django website prototype for garment industry that automates procurement process and inventory management.</i>
                   </li>
                 </ul>
 
@@ -263,16 +319,6 @@
 
             <hr class="m-0">
 
-            <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-              <div class="w-100">
-                <h2 class="mb-5">Interests</h2>
-                <p style="font-size:20px">I love watching movies and tv shows, reading novels and playing poker.</p>
-                <p style="font-size:20px">Also, I am an avid follower of cricket :)</p>
-              </div>
-            </section>
-
-            <hr class="m-0">
-
             <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
               <div class="w-100">
                 <h2 class="mb-5">Volunteering</h2>
@@ -281,11 +327,12 @@
                   <div class="resume-content">
                     <h3 class="mb-0">BUET Brainiacs
                     <img src="{% static "img/brainiacs.png" %}" width="60" height="60" class="ml-4"></h3>
-                    <div class="subheading mb-3">Publication Executive</div>
-                    <p>Quiz club of BUET.</p>
+                    <div class="subheading mb-3">General Secretary</div>
+                    <p>Quiz club of BUET</p>
+                    <p>Former Treasurer (2021-2022), Publication Executive (2019-2021), Executive (2018-2019)</p>
                   </div>
                   <div class="resume-date text-md">
-                    <span class="text-primary">November 2018 - Present</span>
+                    <span class="text-primary">May 2022 - Present</span>
                   </div>
                 </div>
 
